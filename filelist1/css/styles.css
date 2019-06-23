@@ -1,0 +1,124 @@
+
+/*全体のボディ設定*/
+body{
+font-family: verdana, sans-serif;
+margin: 0px;
+}
+/*ヘッダー内の全領域*/
+body{
+text-align: right;
+background-image: url("wall.png");
+height:  200px;
+background-size: cover;
+background-position: 50% 50%;
+}
+}
+/*タブ領域*/
+.container{
+  margin: 30px auto;
+  width: 500px;
+}
+.menu{
+  list-style: none;
+  display: flex;
+  margin: 0px;
+}
+.menu li a{
+  display: inline-block;
+  width: 100px;
+  text-align:center;
+  padding:  8px 0;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.menu li a.active{
+  background: #333;
+  color: #fff;
+}
+.menu li a:not(.active):hover{
+  opacity: 0.5;
+  transition: 0.4s;
+}
+
+.content.active{
+  background: #333;
+  color: #fff;
+  min-height: 150px;
+  display: block;
+}
+.content{
+  display: none;
+}
+
+/*自分の顔アバター*/
+.icon{
+text-align: center;
+border-radius: 50%;
+border: 5px solid white;
+box-shadow: 2px 2px gray;
+}
+/*ヘッダーのメニュー*/
+header ul{
+list-style-type: none;
+padding-left: 0;
+}
+header li{
+display: inline-block;
+padding: 4px 8px;
+}
+header a{
+text-decoration: none;
+color: white;
+}
+header a:hover{
+color: gray;
+}
+/*セクションに対する全領域*/
+section{
+text-align: center;
+color: gray;
+}
+section h1{
+text-decoration: underline royalblue;
+}
+section p{
+margin: 0px;
+display: inline-block;
+text-align: left;
+font-size: 14px;
+}
+
+
+
+/*制作リスト・ボタン*/
+.btn{
+background-color: lightgray;
+display: inline-block;
+color: blue;
+text-decoration: none;
+border-radius: 10px;
+opacity: 0.4;
+}
+.btn:hover{
+opacity: 1.0;
+}
+/*フッター領域*/
+footer{
+text-align: center;
+}
+footer ul{
+list-style-type: none;
+padding-left: 0px;
+margin: 30px;
+}
+footer li{
+margin-top: 50px;
+display: inline-block;
+}
+footer a:hover{
+opacity: 0.5;
+}
+footer p{
+color: lightgray;
+font-size: 12px;
+}
