@@ -4,11 +4,14 @@
 
 <head>
 <meta carset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>portforio.</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+
     <!--tabu-->
 <div class="container">
 <ul class="menu">
@@ -45,7 +48,7 @@ portforio!
 
 <header>
   <!--menu-->
-<nav>
+<nav id="menu1">
 <ul>
 <li>
 <a href="index.html">
@@ -83,9 +86,9 @@ ABOUT
 　私は現在、インテリア商社として内装材の商品の提案、販売をさせて頂いおります。<br>
 営業としてお客様と携わって行く中で私自身の手でお客様に満足して頂けるモノを作る
 ことの出来るWEBエンジニアになりたいと考えました。<br>
-　私の頭で考えるより先に行動する力を生かして技術を身に付けていきたいと考えております。<br>
-また、趣味で囲碁を小学生時代からやっており新しく身に付けたものをアウトプットして行く
-ことが好きなので仕事でもインプットし、アウトプットすることを意識して行動します。</p>
+　私は頭で考えるより先に行動する力を生かして技術を身に付けていきたいと考えております。<br>
+また、趣味で囲碁を小学生の頃からやっており新しく身に付けたものをアウトプットして行く
+ことが好きなので仕事においてもインプットし、アウトプットすることを意識して行動していきます。</p>
 </section>
 <!--実績欄-->
 <section>
@@ -106,8 +109,34 @@ ABOUT
 
 
 </footer>
-
+<div id="back-to-top" style="position:fixed;right:10px;bottom:10px;"><a href="#"><img src="img/backtop.png"></a></div>
+<div id="pos" style="position:fixed;left:5px;bottom:5px;"></div>
 <script src="js/main.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script>
+$(function(){
+  $('#back-to-top').hide();
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100){
+$('#back-to-top').fadeIn();
+    } else{
+      $('#back-to-top').fadeOut();
+    }
+  });
+  $('#back-to-top a').click(function(){
+    $('html,body').animate({
+      scrollTop:0
+    }, 500);
+    return false;
+  });
+});
+  </script>
+
+
+
 
 </body>
 </html>

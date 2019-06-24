@@ -18,6 +18,12 @@ background-position: 50% 50%;
   margin: 30px auto;
   width: 500px;
 }
+.container ul{
+  list-style: none;
+}
+.container li a:hover{
+  opacity: 0.5;
+}
 .menu{
   list-style: none;
   display: flex;
@@ -45,10 +51,12 @@ background-position: 50% 50%;
   color: #fff;
   min-height: 150px;
   display: block;
+  font-size: 30px;
 }
 .content{
   display: none;
 }
+
 
 /*自分の顔アバター*/
 .icon{
@@ -61,10 +69,13 @@ box-shadow: 2px 2px gray;
 header ul{
 list-style-type: none;
 padding-left: 0;
+
 }
 header li{
 display: inline-block;
+
 padding: 4px 8px;
+
 }
 header a{
 text-decoration: none;
