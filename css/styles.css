@@ -8,11 +8,11 @@ margin: 0px;
 body{
 text-align: right;
 background-image: url("wall.png");
-height:  200px;
+height:　200px;
 background-size: cover;
 background-position: 50% 50%;
 }
-
+}
 /*タブ領域*/
 .container{
   margin: 30px auto;
