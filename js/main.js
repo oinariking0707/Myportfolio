@@ -1,3 +1,4 @@
+/*タブ機能*/
 'use strict';
 {
 const menuItems = document.querySelectorAll('.menu li a');

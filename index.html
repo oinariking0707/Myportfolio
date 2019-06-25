@@ -7,12 +7,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>portforio.</title>
+<!--アイコン-->
 <link rel="icon" href="img/daiya.ico">
   <meta name="description" content="portfolio.">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
 
     <!--tabu-->
 <div class="container">
@@ -45,9 +45,6 @@ portforio!
 </section>
 </div>
 
-
-
-
 <header>
   <!--menu-->
 <nav id="menu1">
@@ -78,7 +75,7 @@ ABOUT
 2015.3　足立西高等学校　卒業<br>
 2015.4　大東文化大学　　入学<br>
 2019.3　大東文化大学　　卒業<br>
-2019.4（株）ニップコーポレーション　入社 (2019.6月現在)<br>　
+2019.4　内装材商社　入社 (2019.6月現在)<br>　
 </p>
 </section>
 <!--自己紹介-->
@@ -97,7 +94,7 @@ ABOUT
 <h1>実績作品</h1>
 <a href="#" target="_blank" class="btn">制作リスト </a>
 </section>
-<!--フッター部分-->
+<!--フッターinstgram部分-->
 <footer>
 <ul>
 <li>
@@ -107,38 +104,32 @@ ABOUT
 </li>
 </ul>
 <p>(co)Akio narita</p>
-
-
-
 </footer>
+<!--ジャンプ機能-jqueryscript-->
 <div id="back-to-top" style="position:fixed;right:10px;bottom:10px;"><a href="#"><img src="img/backtop.png"></a></div>
 <div id="pos" style="position:fixed;left:5px;bottom:5px;"></div>
 <script src="js/main.js"></script>
 <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-  <script>
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script>
 $(function(){
-  $('#back-to-top').hide();
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 100){
+$('#back-to-top').hide();
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100){
 $('#back-to-top').fadeIn();
-    } else{
-      $('#back-to-top').fadeOut();
-    }
-  });
-  $('#back-to-top a').click(function(){
-    $('html,body').animate({
-      scrollTop:0
-    }, 500);
-    return false;
-  });
+} else{
+$('#back-to-top').fadeOut();
+}
+});
+$('#back-to-top a').click(function(){
+$('html,body').animate({
+scrollTop:0
+}, 500);
+return false;
+});
 });
   </script>
-
-
-
-
 </body>
 </html>
