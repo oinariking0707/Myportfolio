@@ -20,6 +20,7 @@ background-position: 50% 50%;
 }
 .container ul{
   list-style: none;
+
 }
 
 
@@ -29,6 +30,8 @@ background-position: 50% 50%;
 .menu{
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0px;
 }
 .menu li a{
@@ -48,17 +51,24 @@ background-position: 50% 50%;
   transition: 0.4s;
 }
 
+
 .content.active{
   background: #333;
   color: #fff;
   min-height: 150px;
   display: block;
-  font-size: 30px;
+  font-size: 20px;
 }
 .content{
   display: none;
 }
-
+.a{
+  width: 200px;
+}
+.b{
+  width: 200px;
+  height: 50px;
+}
 /*自分の顔アバター*/
 .icon{
 text-align: center;
